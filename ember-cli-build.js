@@ -4,6 +4,10 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+    'ember-font-awesome': {
+      fontFormats: ['svg'],
+      removeUnusedIcons: EmberApp.env() === 'production'
+    }
     // Add options here
   });
 
