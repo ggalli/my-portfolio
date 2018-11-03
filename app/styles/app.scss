@@ -1,0 +1,42 @@
+@import 'https://fonts.googleapis.com/css?family=Poppins:400,600,700,800';
+@import 'https://fonts.googleapis.com/css?family=Work+Sans:400,500,600';
+@import 'https://fonts.googleapis.com/css?family=Lora:400,700';
+
+@import 'variables.scss';
+@import 'base.scss';
+
+@import 'components/component-footer.scss';
+@import 'components/burger-menu.scss';
+
+
+
+.container{
+    display: flex;
+}
+.main{
+    position: relative;
+    width: 55%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.photo{
+    width: 45%;
+    height: 100vh;
+    background-image: url('https://via.placeholder.com/1100');
+    background-size: cover;
+    background-position: center top;
+}
+.home{
+    text-align: center;
+    a.btn{
+        color: #202020;
+        text-decoration: none;
+        font-family: $poppins;
+        &:hover{
+            background: #202020;
+            color: #fff;
+        }
+    }
+}
