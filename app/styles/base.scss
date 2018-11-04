@@ -139,10 +139,33 @@ h2 {
   margin-bottom: 45px;
   color: #808080;
 }
+h3 {
+  font-family: $lora;
+  font-size: 1.2em;
+  color: #898989;
+  margin-bottom: 35px;
+  letter-spacing: 4px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+h4 {
+  font-family: $poppins;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  font-size: 2.5em;
+}
+p {
+  font-family: $workSans;
+  margin-top: 25px;
+  font-size: 1em;
+  line-height: 1.8em;
+  color: rgba(0,0,0,.6);
+}
 a {
   font-family: $poppins;
 }
-
 .btn-custom {
   display: inline-block;
   padding: 12px 25px;
