@@ -8,22 +8,24 @@
   <nav class="menu-main">
     <ul class="menu-items">
       <li>
-        <a href="#home">Home</a>
+        <a {{action 'transition' 'index'}}>Home</a>
+        {{!-- {{link-to 'Home' 'index'}} --}}
       </li>
       <li>
-        <a href="#about">Sobre</a>
+        <a {{action 'transition' 'about'}}>Sobre</a>
+        {{!-- {{link-to 'Sobre' 'about'}} --}}
       </li>
       <li>
-        <a href="#resume">Qualificações</a>
+        <a {{action 'transition' 'timeline'}}>Linha do tempo</a>
+        {{!-- {{link-to 'Linha do tempo' 'timeline'}} --}}
       </li>
       <li>
-        <a href="#portfolio">Portfolio</a>
+        <a {{action 'transition' 'portfolio'}}>Portfolio</a>
+        {{!-- {{link-to 'Portfolio' 'portfolio'}} --}}
       </li>
       <li>
-        <a href="#blog">Linha do tempo</a>
-      </li>
-      <li>
-        <a href="#contact">Contato</a>
+        <a {{action 'transition' 'contact'}}>Contato</a>
+        {{!-- {{link-to 'Contato' 'contact'}} --}}
       </li>
     </ul>
   </nav>

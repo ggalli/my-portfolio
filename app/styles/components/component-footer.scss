@@ -1,6 +1,9 @@
 .footer{
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    width: 90%;
+    bottom: 15px;
 }
 .hire-me{
     text-transform: uppercase;
@@ -16,14 +19,11 @@
 .socials{
     display: flex;
     li{
-        margin-left: 20px;
+        margin-left: 15px;
         a{
             color: #202020;
             font-size: 1.2em;
             padding: 5px;
         }
     }
-}
-.fa-linkedin-in::before{
-    content: '\f0e1'
 }

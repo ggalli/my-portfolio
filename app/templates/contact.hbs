@@ -1,1 +1,13 @@
-{{outlet}}
+<section class="contact">
+    <div class="wrapper">
+        <h3>Tem um projeto legal em mente? Entre em contato.</h3>
+        <form action="https://formspree.io/guilhermegalli5@gmail.com" method="POST">
+            {{material-input label='Nome' name='nome'}}
+            {{material-input label='Email' name='email'}}
+            {{material-textarea name='mensagem' rows='5' label='Mensagem'}}
+            {{!-- <input type="hidden" name="_next" value="/"> --}}
+            <button type="submit">Enviar mensagem</button>
+        </form>
+    </div>
+</section>
+{{component-socials class='flex-end'}}

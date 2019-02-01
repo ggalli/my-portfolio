@@ -78,7 +78,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -86,6 +87,7 @@ video {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
+  font-family: $workSans;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -126,6 +128,11 @@ table {
 .wrapper {
   margin: 0 auto;
   padding: 20px;
+}
+.center{
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
 }
 h1 {
   font-family: $poppins;
@@ -177,4 +184,23 @@ a {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+button[type='submit']{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 5px;
+  border: none;
+  line-height: 1em;
+  background: transparent;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+  &:hover{
+    background: rgba(0,0,0,.1);
+  }
+}
+.flex-end{
+  justify-content: flex-end;
 }
