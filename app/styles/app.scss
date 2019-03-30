@@ -15,7 +15,6 @@
   display: flex;
 }
 .main {
-  position: relative;
   height: 100vh;
   width: 55%;
   padding: 30px;
@@ -24,14 +23,13 @@
 .photo {
   width: 45%;
   height: 100vh;
-  background-image: url("https://via.placeholder.com/1100");
+  background-image: url("images/perfil.jpg");
   background-size: cover;
-  background-position: center top;
 }
 .home {
-    text-align: center;
-    position: relative;
-    top: 20%;
+  text-align: center;
+  position: relative;
+  top: 20%;
   a.btn {
     color: #202020;
     text-decoration: none;
@@ -69,39 +67,74 @@
     }
   }
 }
-.timeline{
+.timeline {
   padding: 50px;
-}
-.portfolio{
-  padding: 50px 0;
-  ul{
-    display: flex;
-    flex-wrap: wrap;
+  ul {
     position: relative;
-    li{
-      width: 50%;
-      padding: 10px;
+    padding-top: 20px;
+    &::before {
+      content: " ";
       position: absolute;
-      &:nth-of-type(2){
-        right: 0;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: #c0c0c0;
+    }
+    li {
+      padding-left: 40px;
+      position: relative;
+      padding-bottom: 60px;
+      &:last-of-type{
+        padding-bottom: 0;
       }
-      &:nth-of-type(3){
-        top: 157px;
-      }
-      &:nth-of-type(4){
-        right: 0;
-        top: 291px;
-      }
-      &:nth-of-type(5){
-        top: 448px
-      }
-      img{
-        width: 100%;
+      &::before {
+        content: " ";
+        position: absolute;
+        height: 18px;
+        width: 18px;
+        background: #fff;
+        border-radius: 50%;
+        border: solid 1px #ccc;
+        left: -9px;
+        top: 0;
       }
     }
   }
 }
-.contact{
+.portfolio {
+  padding: 50px 30px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    .left{
+      width: 50%;
+      float: left;
+    }
+    .right{
+      width: 50%;
+      float: right;
+    }
+    li {
+      padding: 10px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .fake-jobs{
+    font-size: 10px;
+    color: #aaa;
+  }
+}
+.contact {
   padding: 50px;
   margin-bottom: 77px;
+}
+
+.liquid-container,
+.liquid-child {
+  height: 100%;
+  overflow: initial;
 }

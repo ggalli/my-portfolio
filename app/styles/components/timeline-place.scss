@@ -1,34 +1,34 @@
 .place-container{
     position: relative;
     display: flex;
-    padding: 30px 0;
-    justify-content: space-around;
-    &:before{
-        content: ' ';
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        top: 0;
-        left: -10px;
-        background: #C0C0C0;
-    }
-    &:after{
-        content: ' ';
-        position: absolute;
-        height: 18px;
-        width: 18px;
-        background: #FFF;
-        border-radius: 50%;
-        border: solid 1px #CCC;
-        left: -19px;
-        top: 29px;
-    }
+    // &:before{
+    //     content: ' ';
+    //     position: absolute;
+    //     width: 1px;
+    //     height: 100%;
+    //     top: 0;
+    //     left: -10px;
+    //     background: #C0C0C0;
+    // }
+    // &:after{
+    //     content: ' ';
+    //     position: absolute;
+    //     height: 18px;
+    //     width: 18px;
+    //     background: #FFF;
+    //     border-radius: 50%;
+    //     border: solid 1px #CCC;
+    //     left: -19px;
+    //     top: 29px;
+    // }
     strong{
         font-size: 16px;
         color: #898989;
         font-weight: 400;
+        width: 35%;
     }
     .place{
+        width: 65%;
         h4{
             font-size: 18px;
             text-transform: uppercase;

@@ -196,10 +196,6 @@ button[type='submit']{
   font-weight: 700;
   outline: none;
   cursor: pointer;
-  transition: .3s;
-  &:hover{
-    background: rgba(0,0,0,.1);
-  }
 }
 .flex-end{
   justify-content: flex-end;
