@@ -1,0 +1,140 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:400,600,700,800";
+@import "https://fonts.googleapis.com/css?family=Work+Sans:400,500,600";
+@import "https://fonts.googleapis.com/css?family=Lora:400,700i";
+@import "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
+
+@import "variables.scss";
+@import "base.scss";
+
+@import "components/component-footer.scss";
+@import "components/burger-menu.scss";
+@import "components/timeline-place.scss";
+@import "components/material.scss";
+
+.container {
+  display: flex;
+}
+.main {
+  height: 100vh;
+  width: 55%;
+  padding: 30px;
+  overflow: auto;
+}
+.photo {
+  width: 45%;
+  height: 100vh;
+  background-image: url("images/perfil.jpg");
+  background-size: cover;
+}
+.home {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  a.btn {
+    color: #202020;
+    text-decoration: none;
+    font-family: $poppins;
+    &:hover {
+      background: #202020;
+      color: #fff;
+    }
+  }
+}
+.about {
+  padding: 40px;
+  .skills-block {
+    margin-top: 80px;
+    .skill {
+      margin-bottom: 40px;
+      span {
+        display: block;
+        font-family: $poppins;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+      &-bar {
+        padding: 2px;
+        border: solid 1px #d0d0d0;
+        .progress {
+          background: #202020;
+          height: 10px;
+        }
+      }
+    }
+  }
+}
+.timeline {
+  padding: 50px;
+  ul {
+    position: relative;
+    padding-top: 20px;
+    &::before {
+      content: " ";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: #c0c0c0;
+    }
+    li {
+      padding-left: 40px;
+      position: relative;
+      padding-bottom: 60px;
+      &:last-of-type{
+        padding-bottom: 0;
+      }
+      &::before {
+        content: " ";
+        position: absolute;
+        height: 18px;
+        width: 18px;
+        background: #fff;
+        border-radius: 50%;
+        border: solid 1px #ccc;
+        left: -9px;
+        top: 0;
+      }
+    }
+  }
+}
+.portfolio {
+  padding: 50px 30px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    .left{
+      width: 50%;
+      float: left;
+    }
+    .right{
+      width: 50%;
+      float: right;
+    }
+    li {
+      padding: 10px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .fake-jobs{
+    font-size: 10px;
+    color: #aaa;
+  }
+}
+.contact {
+  padding: 50px;
+  margin-bottom: 77px;
+}
+
+.liquid-container,
+.liquid-child {
+  height: 100%;
+  overflow: initial;
+}

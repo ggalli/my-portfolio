@@ -1,0 +1,32 @@
+<div class="hamburger {{if isActive "open"}}" id="hamburger-9" {{action "toogleMenu"}}>
+  <span class="line"></span>
+  <span class="line"></span>
+  <span class="line"></span>
+</div>
+
+<div class='menu {{if isActive 'show-menu'}}'>
+  <nav class="menu-main">
+    <ul class="menu-items">
+      <li>
+        <a {{action 'transition' 'index'}}>Home</a>
+        {{!-- {{link-to 'Home' 'index'}} --}}
+      </li>
+      <li>
+        <a {{action 'transition' 'about'}}>Sobre</a>
+        {{!-- {{link-to 'Sobre' 'about'}} --}}
+      </li>
+      <li>
+        <a {{action 'transition' 'timeline'}}>Linha do tempo</a>
+        {{!-- {{link-to 'Linha do tempo' 'timeline'}} --}}
+      </li>
+      <li>
+        <a {{action 'transition' 'portfolio'}}>Portfolio</a>
+        {{!-- {{link-to 'Portfolio' 'portfolio'}} --}}
+      </li>
+      <li>
+        <a {{action 'transition' 'contact'}}>Contato</a>
+        {{!-- {{link-to 'Contato' 'contact'}} --}}
+      </li>
+    </ul>
+  </nav>
+</div>
