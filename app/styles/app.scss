@@ -1,4 +1,5 @@
-@import "https://fonts.googleapis.com/css?family=Poppins:400,600,700,800";
+// @import "https://fonts.googleapis.com/css?family=Poppins:400,600,700,800";
+@import "https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500,700,800";
 @import "https://fonts.googleapis.com/css?family=Work+Sans:400,500,600";
 @import "https://fonts.googleapis.com/css?family=Lora:400,700i";
 @import "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
@@ -15,6 +16,7 @@
   display: flex;
 }
 .main {
+  position: relative;
   height: 100vh;
   width: 55%;
   padding: 30px;
@@ -33,7 +35,7 @@
   a.btn {
     color: #202020;
     text-decoration: none;
-    font-family: $poppins;
+    font-family: $Alegreya;
     &:hover {
       background: #202020;
       color: #fff;
@@ -48,7 +50,7 @@
       margin-bottom: 40px;
       span {
         display: block;
-        font-family: $poppins;
+        font-family: $Alegreya;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 600;
@@ -130,11 +132,17 @@
 }
 .contact {
   padding: 50px;
-  margin-bottom: 77px;
+  margin-bottom: 85px;
 }
 
 .liquid-container,
 .liquid-child {
   height: 100%;
   overflow: initial;
+}
+
+// RESPONSIVE
+
+@media only screen and (max-width: 426px) {
+
 }
