@@ -24,4 +24,15 @@ before_install:
 script:
   - npm run lint:hbs
   - npm run lint:js
-  - npm test
+  # - npm test
+  - ember b -p
+
+  deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    keep-history: true
+    on:
+      branch: master
+    local-dir: dist
+    verbose: true
