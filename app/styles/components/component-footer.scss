@@ -8,7 +8,7 @@
 .hire-me{
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: $poppins;
+    font-family: $Alegreya;
     font-weight: 700;
     font-size: 1em;
     color: #202020;
@@ -18,6 +18,9 @@
 }
 .socials{
     display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     li{
         margin-left: 15px;
         a{
