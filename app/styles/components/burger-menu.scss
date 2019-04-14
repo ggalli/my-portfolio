@@ -1,7 +1,7 @@
 //BURGER ICON
 
 .hamburger .line {
-  width: 30px;
+  width: 25px;
   height: 3px;
   background-color: #202020;
   display: block;
@@ -16,8 +16,9 @@
 }
 
 #hamburger-9 {
-  position: absolute;
-  right: 35px;
+  position: fixed;
+  right: 25px;
+  top: 20px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -53,7 +54,7 @@
 }
 
 #hamburger-9.open .line {
-  width: 35px;
+  width: 30px;
 }
 
 #hamburger-9.open .line:nth-child(2) {
@@ -136,6 +137,7 @@
   }
 }
 .show-menu {
+  position: fixed;
   visibility: visible;
   opacity: 1;
   .menu-items li:nth-of-type(1) > a {
