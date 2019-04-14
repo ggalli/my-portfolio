@@ -1,0 +1,202 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: $workSans;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 20px;
+}
+.center{
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+}
+h1 {
+  font-family: $Alegreya;
+  font-size: 5em;
+  font-weight: 700;
+}
+h2 {
+  font-family: $workSans;
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin-bottom: 45px;
+  color: #808080;
+}
+h3 {
+  font-family: $lora;
+  font-size: 1.2em;
+  color: #898989;
+  margin-bottom: 35px;
+  letter-spacing: 4px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+h4 {
+  font-family: $Alegreya;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  font-size: 2.5em;
+}
+p {
+  font-family: $workSans;
+  margin-top: 25px;
+  font-size: 1em;
+  line-height: 1.8em;
+  color: rgba(0,0,0,.6);
+}
+a {
+  font-family: $Alegreya;
+}
+.btn-custom {
+  display: inline-block;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: solid 2px #202020;
+  color: #202020;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+button[type='submit']{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 5px;
+  border: none;
+  line-height: 1em;
+  background: transparent;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+}
+.flex-end{
+  justify-content: flex-end;
+}

@@ -1,0 +1,31 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+}
+.hire-me{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: $Alegreya;
+    font-weight: 700;
+    font-size: 1em;
+    color: #202020;
+    text-decoration: none;
+    margin-top: 4px;
+    display: inline-block;
+}
+.socials{
+    display: flex;
+    right: 0;
+    bottom: 0;
+    li{
+        margin-left: 15px;
+        a{
+            color: #202020;
+            font-size: 1.2em;
+            padding: 5px;
+        }
+    }
+}

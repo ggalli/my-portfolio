@@ -1,0 +1,201 @@
+// @import "https://fonts.googleapis.com/css?family=Poppins:400,600,700,800";
+@import "https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500,700,800";
+@import "https://fonts.googleapis.com/css?family=Work+Sans:400,500,600";
+@import "https://fonts.googleapis.com/css?family=Lora:400,700i";
+@import "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
+
+@import "variables.scss";
+@import "base.scss";
+
+@import "components/component-footer.scss";
+@import "components/burger-menu.scss";
+@import "components/timeline-place.scss";
+@import "components/material.scss";
+
+.container {
+  display: flex;
+}
+.main {
+  position: relative;
+  height: 100vh;
+  width: 55%;
+  padding: 30px;
+  overflow: auto;
+}
+.photo {
+  width: 45%;
+  height: 100vh;
+  background-image: url("images/perfil.jpg");
+  background-size: cover;
+}
+.home {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  a.btn {
+    color: #202020;
+    text-decoration: none;
+    font-family: $Alegreya;
+    &:hover {
+      background: #202020;
+      color: #fff;
+    }
+  }
+}
+.about {
+  padding: 40px;
+  .skills-block {
+    margin-top: 80px;
+    .skill {
+      margin-bottom: 40px;
+      span {
+        display: block;
+        font-family: $Alegreya;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+      &-bar {
+        padding: 2px;
+        border: solid 1px #d0d0d0;
+        .progress {
+          background: #202020;
+          height: 10px;
+        }
+      }
+    }
+  }
+}
+.timeline {
+  padding: 50px;
+  ul {
+    position: relative;
+    padding-top: 20px;
+    &::before {
+      content: " ";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: #c0c0c0;
+    }
+    li {
+      padding-left: 40px;
+      position: relative;
+      padding-bottom: 60px;
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+      &::before {
+        content: " ";
+        position: absolute;
+        height: 18px;
+        width: 18px;
+        background: #fff;
+        border-radius: 50%;
+        border: solid 1px #ccc;
+        left: -9px;
+        top: 0;
+      }
+    }
+  }
+}
+.portfolio {
+  padding: 50px 30px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    .left {
+      width: 50%;
+    }
+    .right {
+      width: 50%;
+    }
+    li {
+      padding: 10px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .fake-jobs {
+    font-size: 10px;
+    color: #aaa;
+  }
+}
+.contact {
+  padding: 50px;
+  footer{
+    width: initial;
+    right: 0;
+    .hire-me{
+      display: none;
+    }
+  }
+}
+
+.liquid-container,
+.liquid-child {
+  height: 100%;
+  overflow: initial;
+}
+
+// RESPONSIVE
+
+@media only screen and (max-width: 769px) {
+  .timeline {
+    padding: 40px;
+    .place-container {
+      display: block;
+      .place {
+        width: 100%;
+      }
+    }
+  }
+  .portfolio {
+    ul {
+      display: block;
+      .left,
+      .right {
+        width: 100%;
+      }
+    }
+  }
+  .contact {
+    padding: 40px;
+    margin-bottom: 0;
+    height: 100%;
+    .socials {
+      margin-top: 35px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .hide{
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .photo {
+    width: 100%;
+    background-position: 0 30%;
+  }
+  .main {
+    width: 100%;
+    padding: 0;
+  }
+  .menu {
+    width: 100%;
+  }
+  .footer {
+    bottom: 15px;
+    padding: 0 25px;
+  }
+}
