@@ -87,7 +87,7 @@
       padding-left: 40px;
       position: relative;
       padding-bottom: 60px;
-      &:last-of-type{
+      &:last-of-type {
         padding-bottom: 0;
       }
       &::before {
@@ -110,13 +110,11 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    .left{
+    .left {
       width: 50%;
-      float: left;
     }
-    .right{
+    .right {
       width: 50%;
-      float: right;
     }
     li {
       padding: 10px;
@@ -125,14 +123,20 @@
       }
     }
   }
-  .fake-jobs{
+  .fake-jobs {
     font-size: 10px;
     color: #aaa;
   }
 }
 .contact {
   padding: 50px;
-  margin-bottom: 85px;
+  footer{
+    width: initial;
+    right: 0;
+    .hire-me{
+      display: none;
+    }
+  }
 }
 
 .liquid-container,
@@ -143,6 +147,55 @@
 
 // RESPONSIVE
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 769px) {
+  .timeline {
+    padding: 40px;
+    .place-container {
+      display: block;
+      .place {
+        width: 100%;
+      }
+    }
+  }
+  .portfolio {
+    ul {
+      display: block;
+      .left,
+      .right {
+        width: 100%;
+      }
+    }
+  }
+  .contact {
+    padding: 40px;
+    margin-bottom: 0;
+    height: 100%;
+    .socials {
+      margin-top: 35px;
+    }
+  }
+}
 
+@media only screen and (max-width: 1025px) {
+  .hide{
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .photo {
+    width: 100%;
+    background-position: 0 30%;
+  }
+  .main {
+    width: 100%;
+    padding: 0;
+  }
+  .menu {
+    width: 100%;
+  }
+  .footer {
+    bottom: 15px;
+    padding: 0 25px;
+  }
 }
