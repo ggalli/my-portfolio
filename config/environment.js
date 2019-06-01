@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'my-portfolio',
+    modulePrefix: 'portfolio2',
     environment,
     rootURL: '/',
     locationType: 'auto',
